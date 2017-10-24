@@ -1,4 +1,4 @@
-function fizzBuzz(number) {
+function FizzBuzz(number) {
   if (number % 3 === 0 && number % 5 === 0)
     return 'fizzbuzz';
   else if (number % 3 === 0)
@@ -7,4 +7,10 @@ function fizzBuzz(number) {
     return 'buzz';
   else
     return number
+}
+
+var fizzBuzz = new FizzBuzz();
+
+for (var i = 1; i <= 100; i++) {
+    console.log(fizzBuzz(i));
 }
